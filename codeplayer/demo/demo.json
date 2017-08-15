@@ -1,5 +1,4 @@
-{
-	"id":"extract-method",
+{"id":"extract-method",
 	"actions":[
 		{"type":"setStep","options":{"step":1}},
 		{"type":"run","options":{"command":"goDocEnd"}},
