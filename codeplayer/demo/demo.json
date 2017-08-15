@@ -4,13 +4,13 @@
     			"type":"setStep","options":{"step":1}
     			},
     			{
-    				"type":"","options":{"text":"","attachment":"selection","locale":"ru"}
+    				"type":"popover","options":{"text":"","attachment":"selection","locale":"ru"}
     			},
     			{
-    				"type":"","options":{"text":"","attachment":"selection","locale":"uk"}
+    				"type":"popover","options":{"text":"","attachment":"selection","locale":"uk"}
     			},
     			{
-    				"type":"","options":{"location":"","text":""}
+    				"type":"popover","options":{"location":"","text":""}
     			},
     			{
     				"type":"popover","options":{"text":"","attachment":"selection","locale":"ru"}
