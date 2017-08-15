@@ -287,4 +287,21 @@
     			}
     		],
 "lang":"java",
-"code":"void printOwing() {\n  Enumeration elements = orders.elements();\n  double outstanding = 0.0;\n\n  \/\/ print banner\n  System.out.println (\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n  System.out.println (\"Customer totals\");\n  System.out.println (\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");\n\n  \/\/ print owings\n  while (elements.hasMoreElements()) {\n    Order each = (Order) elements.nextElement();\n    outstanding += each.getAmount();\n  }\n\n  \/\/ print details\n  System.out.println(\"name: \" + name);\n  System.out.println(\"amount: \" + outstanding);\n}","steps":[{"ru":"Создайте новый метод и назовите его так, чтобы название отражало суть того, что будет делать этот метод.","en":"Create a new method and name it in a way that makes its purpose self-evident.","uk":"Створіть новий метод. Потурбуйтеся, щоб його назва відбивала суть того, що робитиме цей метод."},{"ru":"Скопируйте беспокоящий вас фрагмент кода в новый метод. Удалите этот фрагмент из старого места и замените вызовом вашего нового метода.","en":"Copy the relevant code fragment to your new method. Delete the fragment from its old location and put a call for the new method there instead.","uk":"Скопіюйте фрагмент коду, що вас цікавить, в новий метод. Видаліть цей фрагмент із старого місця і замініть викликом вашого нового методу."},{"ru":"","en":"","uk":""},{"ru":"","en":"","uk":""}]}
+"code":"void printOwing() {
+	\n  Enumeration elements = orders.elements();
+	\n  double outstanding = 0.0;
+	\n\n  \/\/ print banner
+	\n  System.out.println (\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");
+	\n  System.out.println (\"Customer totals\");
+	\n  System.out.println (\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\");
+	\n\n  \/\/ print owings
+	\n  while (elements.hasMoreElements()) {
+	\n    Order each = (Order) elements.nextElement();
+	\n    outstanding += each.getAmount();
+	\n  }
+	\n\n  \/\/ print details
+	\n  System.out.println(\"name: \" + name);
+	\n  System.out.println(\"amount: \" + outstanding);
+	\n}
+",
+"steps":[{"ru":"","en":"","uk":""},{"ru":"","en":"","uk":""},{"ru":"","en":"","uk":""},{"ru":"","en":"","uk":""}]}
