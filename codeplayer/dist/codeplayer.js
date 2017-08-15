@@ -794,7 +794,7 @@
     if (!scenario.ready) {
       for (var i = 0; i < scenario.actions.length; i++) {
         if (scenario.actions[i].type == 'popover' && (!scenario.actions[i].options.locale || scenario.actions[i].options.locale == options.locale)) {
-          scenario.actions[i].options.text;
+          scenario.actions[i].options.text += '<p><small class="blinking-tooltip-text">' + texts["Click on these blue things to continue."] + '</small></p>';
           break;
         }
       }
