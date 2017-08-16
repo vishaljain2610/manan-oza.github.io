@@ -2,7 +2,7 @@
  "actions":[
      {"type":"setStep","options":{"step":1}},
      {"type":"wait","options":{"timeout":"500"}},
-     {"type":"run","options":{"command":"goDocEnd"}},
+     //{"type":"run","options":{"command":"goDocEnd"}},
      {"type":"type","options":{"text":"<div id=\"header\">\n<h1>Hello World</h1>\n<p>Whoa, we've just created a web page!</p>\n</div>","delay":20}},{"type":"setStep","options":{"step":2}},
      {"type":"select","options":{"location":"printOwing","text":"  \/\/ print banner\n  System.out.println (\"*****************************\");\n  System.out.println (\"****** Customer totals ******\");\n  System.out.println (\"*****************************\");"}},
      {"type":"type","options":{"text":"←","delay":500}},
