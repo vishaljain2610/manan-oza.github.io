@@ -700,6 +700,7 @@
         'csharp': 'text/x-csharp',
         'php': 'text/x-php',
         'delphi': 'text/x-pascal',
+        'HTML5': 'text/x-pascal',
         'python': 'text/x-python'
       };
       options.mode = lang_mode[scenario.lang];
@@ -713,7 +714,7 @@
     var texts = _.extend(default_texts, options.translation || {});
 
     // Render steps.
-    /*if (scenario.steps && scenario.steps.length) {
+    if (scenario.steps && scenario.steps.length) {
       var $steps = $('<div class="codeplayer-roadmap"></div>');
       for (var i = 0; i < scenario.steps.length; i++) {
         var step_title = _.isObject(scenario.steps[i]) ? scenario.steps[i][options.locale] : scenario.steps[i];
@@ -723,7 +724,7 @@
       $element.append($steps);
 
       $('a', $steps).attr('target', '_blank');
-    }*/
+    }
 
 
     // Render screen.
