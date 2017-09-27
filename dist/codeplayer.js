@@ -2128,7 +2128,7 @@
     }
     that.timer(next, options.afterDelay);
   };
-}/*));;(function (root, factory) {
+}));;(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['underscore', 'jquery', '../codeplayer'], factory);
@@ -2150,6 +2150,7 @@
    * complete all steps.
    * @param {int} [options.wait=1000] Delay before next action.
    * @param {Function} [next] Reference to the next action.
+   */
   pl.prototype.availableActions.setStep = function(options, next) {
     var that = this;
     next = next || _.bind(that.next, that);
@@ -2197,7 +2198,7 @@
       }, options.wait);
     }
   };
-}*/));;(function (root, factory) {
+}));;(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['underscore', 'jquery', '../codeplayer'], factory);
