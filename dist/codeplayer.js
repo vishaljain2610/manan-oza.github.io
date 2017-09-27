@@ -484,7 +484,7 @@
 
       return this;
     },
-/*
+
     setStep: function(step) {
       this.step = step;
       var $player = $(this.editor.display.wrapper).closest('.codeplayer');
@@ -506,7 +506,7 @@
         $('.step:nth-child(' + step + ')', $roadmap).removeClass('completed').addClass('active').addClass('transitioned');
       }
       setTimeout(function(){ $roadmap.removeClass('fastForward'); }, 1)
-    },*/
+    },
 
     /**
      * Scroll window to specified jQuery element or position.
@@ -700,7 +700,6 @@
         'csharp': 'text/x-csharp',
         'php': 'text/x-php',
         'delphi': 'text/x-pascal',
-        'HTML5': 'text/x-pascal',
         'python': 'text/x-python'
       };
       options.mode = lang_mode[scenario.lang];
@@ -829,7 +828,7 @@
 
     var $back_next = $('<div class="btn-group" role="group"></div>');
 
-    /*var $back_button = createButton({
+    var $back_button = createButton({
       title: texts['Back'],
       buttonClass: 'btn-success btn-embossed codeplayer-back',
       iconClass: 'fa fa-angle-left'
@@ -874,7 +873,7 @@
       });
       $diff_button.hide();
     }
-*/
+
     // Compile.
     var hasCompile = false;
     scenario.actions.every(function(el, i) {
