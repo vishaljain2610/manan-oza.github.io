@@ -168,7 +168,7 @@
 			"options": {
 				"text": "double outstanding = "
 			}
-		},
+		}
 	],
 	"lang": "HTML5",
 	"code": "<!DOCTYPE html>\n<html>\n</html>"
