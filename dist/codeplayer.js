@@ -799,7 +799,7 @@
         }
       }
     }
-
+/*
     // Create controls.
     var $controls = $('<div class="codeplayer-controls"></div>');
     var createButton = function(options) {
@@ -873,7 +873,7 @@
       });
       $diff_button.hide();
     }
-
+*?
     // Compile.
     var hasCompile = false;
     scenario.actions.every(function(el, i) {
