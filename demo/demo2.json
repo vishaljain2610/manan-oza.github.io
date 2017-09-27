@@ -1,11 +1,6 @@
 {
 	"id": "extract-method",
-	"actions": [{
-			"type": "setStep",
-			"options": {
-				"step": 1
-			}
-		},
+	"actions": [
 		{
 			"type": "wait",
 			"options": {
@@ -26,12 +21,6 @@
 			}
 		},
 		{
-			"type": "setStep",
-			"options": {
-				"step": 2
-			}
-		},
-		{
 			"type": "type",
 			"options": {
 				"text": "←",
@@ -42,12 +31,6 @@
 			"type": "type",
 			"options": {
 				"text": "  printBanner();"
-			}
-		},
-		{
-			"type": "setStep",
-			"options": {
-				"step": 3
 			}
 		},
 		{
@@ -109,12 +92,6 @@
 			"type": "type",
 			"options": {
 				"text": "outstanding"
-			}
-		},
-		{
-			"type": "setStep",
-			"options": {
-				"step": 4
 			}
 		},
 		{
@@ -192,26 +169,7 @@
 				"text": "double outstanding = "
 			}
 		},
-		{
-			"type": "setStep",
-			"options": {
-				"step": -1
-			}
-		}
 	],
 	"lang": "HTML5",
-	"code": "<!DOCTYPE html>\n<html>\n</html>",
-	"steps": [{
-			"en": "Create a new method and name it in a way that makes its purpose self-evident."
-		},
-		{
-			"en": "Copy the relevant code fragment to your new method. Delete the fragment from its old location and put a call for the new method there instead."
-		},
-		{
-			"en": "In the new method, create parameters for passing values from the original method."
-		},
-		{
-			"en": "Pass the results and other changed data back to the original method."
-		}
-	]
+	"code": "<!DOCTYPE html>\n<html>\n</html>"
 }

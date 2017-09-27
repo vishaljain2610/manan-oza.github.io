@@ -484,7 +484,7 @@
 
       return this;
     },
-
+/*
     setStep: function(step) {
       this.step = step;
       var $player = $(this.editor.display.wrapper).closest('.codeplayer');
@@ -506,7 +506,7 @@
         $('.step:nth-child(' + step + ')', $roadmap).removeClass('completed').addClass('active').addClass('transitioned');
       }
       setTimeout(function(){ $roadmap.removeClass('fastForward'); }, 1)
-    },
+    },*/
 
     /**
      * Scroll window to specified jQuery element or position.
@@ -713,7 +713,7 @@
     var texts = _.extend(default_texts, options.translation || {});
 
     // Render steps.
-    if (scenario.steps && scenario.steps.length) {
+    /*if (scenario.steps && scenario.steps.length) {
       var $steps = $('<div class="codeplayer-roadmap"></div>');
       for (var i = 0; i < scenario.steps.length; i++) {
         var step_title = _.isObject(scenario.steps[i]) ? scenario.steps[i][options.locale] : scenario.steps[i];
@@ -723,7 +723,7 @@
       $element.append($steps);
 
       $('a', $steps).attr('target', '_blank');
-    }
+    }*/
 
 
     // Render screen.
@@ -828,7 +828,7 @@
 
     var $back_next = $('<div class="btn-group" role="group"></div>');
 
-    var $back_button = createButton({
+    /*var $back_button = createButton({
       title: texts['Back'],
       buttonClass: 'btn-success btn-embossed codeplayer-back',
       iconClass: 'fa fa-angle-left'
@@ -873,7 +873,7 @@
       });
       $diff_button.hide();
     }
-
+*/
     // Compile.
     var hasCompile = false;
     scenario.actions.every(function(el, i) {
@@ -2127,7 +2127,7 @@
     }
     that.timer(next, options.afterDelay);
   };
-}));;(function (root, factory) {
+}/*));;(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['underscore', 'jquery', '../codeplayer'], factory);
@@ -2149,7 +2149,6 @@
    * complete all steps.
    * @param {int} [options.wait=1000] Delay before next action.
    * @param {Function} [next] Reference to the next action.
-   */
   pl.prototype.availableActions.setStep = function(options, next) {
     var that = this;
     next = next || _.bind(that.next, that);
@@ -2197,7 +2196,7 @@
       }, options.wait);
     }
   };
-}));;(function (root, factory) {
+}*/));;(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['underscore', 'jquery', '../codeplayer'], factory);
