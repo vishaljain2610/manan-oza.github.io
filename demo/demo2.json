@@ -10,8 +10,9 @@
 		{
 			"type": "moveTo",
 			"options": {
-				"location": "white;|||",
+				"location": "white;",
 				"place": "end",
+				"text": "|||}",
 				"delay": 0
 			}
 		},
