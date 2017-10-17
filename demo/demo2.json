@@ -154,5 +154,37 @@
 		}
 	],
 	"lang": "HTML5",
-	"code": "<!DOCTYPE html>\n<html>\n</html>"
+	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n   position: relative;\n    text-align: center;\n    colour: white;\n</style>\n</head>\n</html>"
 }
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <img src="img_fjords_wide.jpg" alt="Norway" style="width:100%;">
+  <div class="centered">Centered</div>
+</div>
+
+</body>
+</html> 
