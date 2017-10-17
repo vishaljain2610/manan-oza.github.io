@@ -8,36 +8,6 @@
 			}
 		},
 		{
-			"type": "run",
-			"options": {
-				"command": "goDocEnd"
-			}
-		},
-		{
-			"type": "wait",
-			"options": {
-				"timeout": "500"
-			}
-		},
-		{
-			"type": "run",
-			"options": {
-				"command": "goDocEnd"
-			}
-		},
-		{
-			"type": "wait",
-			"options": {
-				"timeout": "500"
-			}
-		},
-		{
-			"type": "run",
-			"options": {
-				"command": "goDocEnd"
-			}
-		},
-		{
 			"type": "moveTo",
 			"options": {
 				"location": "white;",
