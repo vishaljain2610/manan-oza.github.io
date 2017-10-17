@@ -10,7 +10,7 @@
 		{
 			"type": "moveTo",
 			"options": {
-				"location": "white;",
+				"location": "colour: white;",
 				"place": "end",
 				"text": "|||}",
 				"delay": 0
