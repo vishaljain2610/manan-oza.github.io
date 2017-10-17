@@ -10,7 +10,7 @@
 		{
 			"type": "moveTo",
 			"options": {
-				"location": "white;",
+				"location": "white;|||",
 				"place": "end",
 				"delay": 0
 			}
@@ -37,5 +37,5 @@
 		}
 	],
 	"lang": "HTML5",
-	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n\tposition: relative;\n\ttext-align: center;\n\tcolour: white;\n}\n</style>\n</head>\n</html>"
+	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n\tposition: relative;\n\ttext-align: center;\n\tcolour: white;\n\n</style>\n</head>\n</html>"
 }
