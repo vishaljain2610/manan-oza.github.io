@@ -8,22 +8,6 @@
 			}
 		},
 		{
-			"type": "moveTo",
-			"options": {
-				"location": "colour: white;",
-				"place": "end",
-				"text": "|||}",
-				"delay": 0
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "}\n.centered {\n\tposition: relative;\n\ttop: 50%;\n\tleft: 50%;\n\ttransform: translate(-50%, -50%);\n}",
-				"delay": 20
-			}
-		},
-		{
 			"type": "run",
 			"options": {
 				"command": "goDocEnd"
@@ -38,5 +22,5 @@
 		}
 	],
 	"lang": "HTML5",
-	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n\tposition: relative;\n\ttext-align: center;\n\tcolour: white;\n\n</style>\n</head>\n</html>"
+	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n\tposition: relative;\n\ttext-align: center;\n\tcolour: white;}\n.centered {\n\tposition: relative;\n\ttop: 50%;\n\tleft: 50%;\n\ttransform: translate(-50%, -50%);\n}\n\n</style>\n</head>\n</html>"
 }
