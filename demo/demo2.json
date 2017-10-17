@@ -40,7 +40,7 @@
 		{
 			"type": "moveTo",
 			"options": {
-				"location": "}",
+				"location": "white;",
 				"place": "end",
 				"delay": 0
 			}
@@ -48,7 +48,7 @@
 		{
 			"type": "type",
 			"options": {
-				"text": ".centered {\n\tposition: relative;\n\ttop: 50%;\n\tleft: 50%;\n\ttransform: translate(-50%, -50%);\n}",
+				"text": "}\n.centered {\n\tposition: relative;\n\ttop: 50%;\n\tleft: 50%;\n\ttransform: translate(-50%, -50%);\n}",
 				"delay": 20
 			}
 		},
