@@ -738,7 +738,7 @@
     // Render editor.
     options.diff = (typeof(CodeMirror.MergeView) != 'undefined' && options.diff);
     options.mode = options.mode || '';
-    options.edit_mode = options.edit_mode || false;
+    options.edit_mode = options.edit_mode || true;
 
     var editor;
     if (options.diff) {
