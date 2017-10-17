@@ -799,11 +799,11 @@
         }
       }
     }
-/*
+
     // Create controls.
     var $controls = $('<div class="codeplayer-controls"></div>');
     var createButton = function(options) {
-      var $button = $('<a class="btn"></a>').addClass(options.buttonClass).attr('title', options.title);
+      var $button = $('<button type="button" class="btn"></button>').addClass(options.buttonClass).attr('title', options.title);
       $button.icon = $('<span class="icon"></span>').addClass(options.iconClass);
       $button.title = $('<span class="title"></span>').addClass(options.titleClass).html(options.title);
       $button.append($button.icon).append($button.title);
@@ -865,6 +865,7 @@
         setTimeout(function() {
           editor.refresh();
           diff.right.orig.refresh();
+          editor.display.scrollbars.setScrollLeft(0);
         }, 1000);
       });
       $controls.append($diff_button);
@@ -873,7 +874,7 @@
       });
       $diff_button.hide();
     }
-*?
+
     // Compile.
     var hasCompile = false;
     scenario.actions.every(function(el, i) {
@@ -1659,7 +1660,10 @@
       waitForClick: false,
       locale: 'en'
     }, options || {});
-    if (window.locale && options.locale != window.locale) return next();
+
+    if (this.locale && options.locale != this.locale) {
+        return next();
+    }
     var $player = $(that.editor.display.wrapper).closest('.codeplayer');
 
     var next_action = function() {

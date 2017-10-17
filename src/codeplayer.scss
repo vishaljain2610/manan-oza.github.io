@@ -14,7 +14,6 @@ $btn-default-bg: $clouds;
   background-color: #fff;
   min-width: 100px;
   z-index: 2;
-  padding-left: 65px;
 
   .CodeMirror {
     font-size: 12px;
@@ -103,6 +102,7 @@ $btn-default-bg: $clouds;
       right: auto;
     }
     .step:before {
+      font: 16px sans-serif;
       content: counter(my-badass-counter);
       counter-increment: my-badass-counter;
     }
@@ -241,8 +241,13 @@ $btn-default-bg: $clouds;
     border: solid 1px #ecf0f1;
     border-right: 0;
 
+    .btn-group, .btn {
+      width: 42px;
+    }
+
     .btn-group > .btn {
       padding: 9px 6px;
+      width: 21px;
     }
 
     .btn-group > .btn:first-child {

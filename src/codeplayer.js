@@ -740,33 +740,35 @@
     options.mode = options.mode || '';
     options.edit_mode = options.edit_mode || false;
 
-    var editor;
+    var default_options, editor;
     if (options.diff) {
-      var diff = CodeMirror.MergeView($screen[0], {
-        value: scenario.code,
-        origRight: scenario.code,
-        lineNumbers: true,
-        mode: options.mode,
-        showDifferences: false,
-        viewportMargin: Infinity,
-        readOnly: !options.edit_mode,
-        dragDrop: options.edit_mode,
-        autofocus: false
-      });
+      default_options = {
+          value: scenario.code,
+          origRight: scenario.code,
+          lineNumbers: true,
+          showDifferences: false,
+          viewportMargin: Infinity,
+          readOnly: !options.edit_mode,
+          dragDrop: options.edit_mode,
+          autofocus: false,
+          inputStyle: "textarea"
+      };
+      var diff = CodeMirror.MergeView($screen[0], _.extend(default_options, options));
       diff.right.orig.setOption("lineNumbers", false);
       editor = diff.edit;
       editor.diff = diff;
     }
     else {
-      editor = CodeMirror($screen[0], {
-        value: scenario.code,
-        lineNumbers: true,
-        mode: options.mode,
-        viewportMargin: Infinity,
-        readOnly: !options.edit_mode,
-        dragDrop: options.edit_mode,
-        autofocus: false
-      });
+        default_options = {
+            value: scenario.code,
+            lineNumbers: true,
+            viewportMargin: Infinity,
+            readOnly: !options.edit_mode,
+            dragDrop: options.edit_mode,
+            autofocus: false,
+            inputStyle: "textarea"
+        };
+      editor = CodeMirror($screen[0], _.extend(default_options, options));
     }
     $screen.data('CodeMirror', editor);
 
@@ -803,7 +805,7 @@
     // Create controls.
     var $controls = $('<div class="codeplayer-controls"></div>');
     var createButton = function(options) {
-      var $button = $('<a class="btn"></a>').addClass(options.buttonClass).attr('title', options.title);
+      var $button = $('<button type="button" class="btn"></button>').addClass(options.buttonClass).attr('title', options.title);
       $button.icon = $('<span class="icon"></span>').addClass(options.iconClass);
       $button.title = $('<span class="title"></span>').addClass(options.titleClass).html(options.title);
       $button.append($button.icon).append($button.title);
