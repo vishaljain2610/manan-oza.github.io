@@ -14,23 +14,15 @@
 			}
 		},
 		{
-			"type": "type",
+			"type": "wait",
 			"options": {
-				"text": "",
-				"delay": 20
+				"timeout": "500"
 			}
 		},
 		{
-			"type": "type",
+			"type": "run",
 			"options": {
-				"text": "←",
-				"delay": 500
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "  printBanner();"
+				"command": "goDocEnd"
 			}
 		},
 		{
@@ -48,113 +40,13 @@
 		{
 			"type": "type",
 			"options": {
-				"text": "",
+				"text": ".centered {\n\tposition: relative;\n\ttop: 50%;\n\tleft: 50%;\n\ttransform",
 				"delay": 20
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "←",
-				"delay": 500
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "  printDetails();"
-			}
-		},
-		{
-			"type": "moveTo",
-			"options": {
-				"place": "text",
-				"text": "void printDetails(|||)",
-				"delay": 0
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "double outstanding"
-			}
-		},
-		{
-			"type": "moveTo",
-			"options": {
-				"location": "printOwing",
-				"place": "text",
-				"text": "printDetails(|||)",
-				"delay": 0
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "outstanding"
-			}
-		},
-		{
-			"type": "wait",
-			"options": {
-				"timeout": "500"
-			}
-		},
-		{
-			"type": "run",
-			"options": {
-				"command": "goDocEnd"
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "",
-				"delay": 20
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "←",
-				"delay": 500
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "←",
-				"delay": 500
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": ""
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "double",
-				"beforeDelay": 500
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "\n  return outstanding;"
-			}
-		},
-		{
-			"type": "type",
-			"options": {
-				"text": "double outstanding = "
 			}
 		}
 	],
 	"lang": "HTML5",
-	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n   position: relative;\n    text-align: center;\n    colour: white;\n</style>\n</head>\n</html>"
+	"code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.container {\n\tposition: relative;\n\ttext-align: center;\n\tcolour: white;\n}\n</style>\n</head>\n</html>"
 }
 
 
