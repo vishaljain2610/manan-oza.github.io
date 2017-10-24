@@ -47,14 +47,24 @@
     <p>Loads scenario with ajax.</p>
 
     <div id="codeplayer"></div>
+     <div id="preview">
+                                <span id="htmlpr"></span>
+                                <style id="csspr"></style>
+                                        <script id="jspr"></script>
+                            </div>
+    
     <script>
         var div1 = document.getElementById('codeplayer');
         $.getJSON('https://manan-oza.github.io/demo/demo2-minified.json', function (data) {
             CodeMirror.player.create(div1, data);
             //alert(data);
         });
+        var htmltext = document.getElementsByClassName('CodeMirror-code');
+    console.log("ID: " + $("div.CodeMirror-code").text());
+            var p = document.getElementById('preview');
+              //  p.find("#htmlpr").html(htmltext);
     </script>
-
+    
 </div>
 
 </body>
