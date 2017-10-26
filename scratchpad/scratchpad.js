@@ -5,7 +5,7 @@ $(function(){
   //--------------------------------------------------------------------------------
   var intro = 
   ['<style>',
-  '  body {background: #DDD6B2;}',
+  '  body {background: #0006B2;}',
   '  .container {',
   '    background: #fff;',
   '    padding: 50px;',
